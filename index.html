@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <header class="site-header">
+    <p class="header-name">María Candela Marchese</p>
+    <button
+    class="menu-toggle"
+    id="menuToggle"
+    type="button"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="mainNav"
+>
+    <img src="burgermenu.svg" alt="" aria-hidden="true">
+</button>
+    <nav 
+    class="main-nav" 
+    id="mainNav"
+    aria-label="Navegación principal">
+   
+
+    <button
+    class="menu-close"
+    id="menuClose"
+    type="button"
+    aria-label="Close navigation menu"
+>
+    ×
+</button>
+
+    <div class="nav-dropdown">
+
+    <button
+
+    class="nav-link portfolio-button"
+    id="portfolioButton"
+    type="button"
+    aria-expanded="false"
+    aria-controls="portfolioMenu"
+    >
+    Portfolio
+    <span class="dropdown-arrow" aria-hidden="true"></span>
+    </button>
+
+    <div
+    class="portfolio-menu" 
+    id="portfolioMenu">
+     <a href="interbanking.html">Interbanking</a> 
+     <a href="metlife.html">ProVida Metlife</a> 
+     <a href="hebamio.html">Hebamio</a>
+     <a href="illustration.html">Illustration Domain</a> 
+     <a href="https://www.figma.com/proto/5QZ2zGyJ0QEoUR34Z68VXp/Portfolio-Marchese-Candela-2026?node-id=3284-1296&viewport=248%2C284%2C0.57&t=vjL0je7eW6SX2UPb-1&scaling=min-zoom&content-scaling=fixed&page-id=3284%3A1295" target="_blank">Hearthstone 2077</a> 
+     <a href="https://www.figma.com/proto/5QZ2zGyJ0QEoUR34Z68VXp/Portfolio-Marchese-Candela-2026?node-id=3291-1301&viewport=248%2C284%2C0.57&t=vjL0je7eW6SX2UPb-1&scaling=min-zoom&content-scaling=fixed&page-id=3284%3A1295" target="_blank">Burger King</a>
+     <a href="https://www.figma.com/proto/5QZ2zGyJ0QEoUR34Z68VXp/Portfolio-Marchese-Candela-2026?node-id=3291-1464&viewport=248%2C284%2C0.57&t=vjL0je7eW6SX2UPb-1&scaling=min-zoom&content-scaling=fixed&page-id=3284%3A1295" target="_blank">Hoyshow</a> 
+      
+    </div>
+</div>
+
+    <button
+        class="nav-link nav-contact"
+        id="openContactModal"
+        type="button">
+        Contact me
+        </button>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    </header>
+
+
+    <section class="about">
+
+
+
+        <div class="about-parallax" aria-hidden="true">
+            <img src="forma1.svg" class="parallax-shape shape-1" alt="">
+            <img src="forma2.svg" class="parallax-shape shape-2" alt="">
+            <img src="forma3.svg" class="parallax-shape shape-3" alt="">
+        </div>
+
+
+        <div class="about-inner">
+    
+            <div class="about-image">
+                <img src="aboutfoto.png" alt="About me">
+            </div>
+    
+            <div class="about-content">
+                <h1 class="about-title">Hello, I’m <em>María Candela Marchese</em></h1>
+                <p class="about-description">
+                 I create clear, intuitive and visually engaging interfaces.
+                </p>
+                <div class="about-location">
+                    <img src="locationicon.svg" alt="location icon">
+                    <p class="location-description">Buenos Aires, Argentina</p>
+    
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    
+    <div class="page">
+
+        <section class="project-grid" aria-label="Proyectos">
+
+            <div class="section-heading featured-heading">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A selection of recent product design work. 
+                </p>
+            </div>
+
+            <a href="interbanking.html" class="project-card project-card--featured reveal-full">
+                <div class="project-meta">
+                    <span>INTERBANKING</span>
+                    <span>•</span>
+                    <span>UX/UI</span>
+                    <span>•</span>
+                    <span>2026</span>
+                    <span class="project-arrow">
+                        <img src="arrow.svg" alt="go to project">
+                    </div>
+
+                </span>
+                    <div class="project-image">
+                    <img src="interimage2.png" alt="Interbanking image">
+                    <img src="badgesooft.png" alt="Sooft Technology" class="project-badge">
+                    </div>
+                <div class="project-content">
+                    <div class="project-heading">
+                    </div>
+                    <p class="project-description">Redesign of the user registration, login, and onboarding experience, and internal pricing tool.</p>
+                </div>
+            </a>
+
+
+
+            <a href="metlife.html" class="project-card project-card--featured reveal-full">
+                <div class="project-meta">
+                    <span>PROVIDA METLIFE</span>
+                    <span>•</span>
+                    <span>UX/UI</span>
+                    <span>•</span>
+                    <span>2021 - 2025</span>
+                    <span class="project-arrow">
+                        <img src="arrow.svg" alt="go to project">
+                </div>
+
+                </span>
+                    <div class="project-image">
+                    <img src="providaimage.png" alt="Interbanking image">
+                    <img src="badgeglobant.png" alt="Globant" class="project-badge">
+                    </div>
+                <div class="project-content">
+                    <div class="project-heading">
+                    </div>
+                    <p class="project-description">Redesign app and online portal, along with the development of the Design System.</p>
+                </div>
+            </a>
+
+
+            <a href="hebamio.html" class="project-card project-card--featured reveal-full">
+                <div class="project-meta">
+                    <span>HHEBAMIO</span>
+                    <span>•</span>
+                    <span>UX/UI</span>
+                    <span>•</span>
+                    <span>2024</span>
+                    <span class="project-arrow">
+                        <img src="arrow.svg" alt="go to project">
+                </div>
+
+                </span>
+                <div class="project-image">
+                    <img src="hebamio.png" alt="Interbanking image">                    </div>
+                <div class="project-content">
+                    <div class="project-heading">
+                    </div>
+                    <p class="project-description">Designing a new desktop website to support the work of midwives in Germany and Austria.</p>
+                </div>
+            </a>
+
+    
+            <a href="illustration.html" class="project-card project-card--featured reveal-full">
+                <div class="project-meta">
+                    <span>ILLUSTRATION DOMAIN</span>
+                    <span>•</span>
+                    <span>ILLUSTRATION & WORKSHOP</span>
+                    <span>•</span>
+                    <span>2021</span>
+                    <span class="project-arrow">
+                        <img src="arrow.svg" alt="go to project">
+                </div>
+
+                </span>
+                    <div class="project-image">
+                    <img src="badgeglobant.png" alt="Globant" class="project-badge">
+                    <img src="illusdomain.png" alt="Interbanking image">
+                    </div>
+                <div class="project-content">
+                    <div class="project-heading">
+                    </div>
+                    <p class="project-description">Specialized team coordinating illustrators for internal projects, workshops, and presales initiatives</p>
+                </div>
+            </a>
+
+            <div class="section-heading reveal">
+                <h2 class="section-title">Case Studies</h2>
+                <p class="section-description">
+                Projects focused on research, problem-solving and interface design.
+                </p>
+            </div>
+
+            <a href="https://www.figma.com/proto/5QZ2zGyJ0QEoUR34Z68VXp/Portfolio-Marchese-Candela-2026?node-id=3284-1296&viewport=248%2C284%2C0.57&t=vjL0je7eW6SX2UPb-1&scaling=min-zoom&content-scaling=fixed&page-id=3284%3A1295" class="project-card reveal" target="_blank">
+                <div class="project-image">
+                    <img src="hearthstone.png" alt="Hearthstone 2077 image">
+                    <img src="badgeglobant.png" alt="Globant" class="project-badge-small">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">
+                        <span>UX/UI</span>
+                        <span>•</span>
+                        <span>2021</span>
+                    </div>
+                    <div clas
+
+                    <div class="project-title-row">
+                        <h2 class="project-title">HEARTHSTONE</h2>
+                
+                        <span class="project-arrow project-arrow--small">
+                            <img src="arrow.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.figma.com/proto/5QZ2zGyJ0QEoUR34Z68VXp/Portfolio-Marchese-Candela-2026?node-id=3291-1301&viewport=248%2C284%2C0.57&t=vjL0je7eW6SX2UPb-1&scaling=min-zoom&content-scaling=fixed&page-id=3284%3A1295" class="project-card reveal" target="_blank">
+                <div class="project-image">
+                    <img src="burgerimage.png" alt="Burger King image">
+                    <img src="badgecoder.png" alt="Globant" class="project-badge-small">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">
+                        <span>UX/UI</span>
+                        <span>•</span>
+                        <span>2021</span>
+                    </div>
+                    <div class="project-title-row">
+                        <h2 class="project-title">BURGER KING</h2>
+                
+                        <span class="project-arrow project-arrow--small">
+                            <img src="arrow.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="https://www.figma.com/proto/5QZ2zGyJ0QEoUR34Z68VXp/Portfolio-Marchese-Candela-2026?node-id=3291-1464&viewport=248%2C284%2C0.57&t=vjL0je7eW6SX2UPb-1&scaling=min-zoom&content-scaling=fixed&page-id=3284%3A1295" class="project-card reveal" target="_blank">
+                <div class="project-image">
+                    <img src="hoyshowimage.png" alt="Hoy show image">
+                    <img src="badgecoder.png" alt="Globant" class="project-badge-small">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">
+                        <span>UX/UI</span>
+                        <span>•</span>
+                        <span>2020</span>
+                    </div>
+                    <div clas
+
+                    <div class="project-title-row">
+                        <h2 class="project-title">HOYSHOW</h2>
+                
+                        <span class="project-arrow project-arrow--small">
+                            <img src="arrow.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+    </div>
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-main">
+
+            <div class="footer-info">
+                <p class="footer-name">Designed and Coded by María Candela Marchese</p>
+                <p class="footer-role">Senior UX/UI Designer</p>
+            </div>
+
+            <div class="footer-links">
+                <a
+                    href="https://www.linkedin.com/in/maria-candela-marchese/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<div
+    class="modal-overlay"
+    id="contactModal"
+    aria-hidden="true"
+>
+    <div
+        class="contact-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contactTitle"
+    >
+
+        <button
+            class="modal-close"
+            id="closeContactModal"
+            type="button"
+            aria-label="Close contact form"
+        >
+            ×
+        </button>
+
+        <div class="contact-header">
+            <h2 id="contactTitle">Let's work together</h2>
+            <p>Tell me a little about your project.</p>
+        </div>
+
+        <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/myezyyvz"
+            method="POST"
+            novalidate
+        >
+
+            <div class="form-inputs">
+
+                <div class="int-form">
+
+                    <!-- FIRST NAME + LAST NAME -->
+
+                    <div class="form-row">
+
+                        <div class="form-field">
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                autocomplete="given-name"
+                                placeholder=" "
+                                required
+                            >
+
+                            <label for="firstName">First name</label>
+
+                            <span class="form-error">
+                                Please enter your first name.
+                            </span>
+                        </div>
+
+
+                        <div class="form-field">
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                autocomplete="family-name"
+                                placeholder=" "
+                                required
+                            >
+
+                            <label for="lastName">Last name</label>
+
+                            <span class="form-error">
+                                Please enter your last name.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-field">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder=" "
+                            required
+                        >
+
+                        <label for="email">Email</label>
+
+                        <span class="form-error">
+                            Please enter a valid email.
+                        </span>
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-field">
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="tel"
+                            placeholder=" "
+                        >
+
+                        <label for="phone">Phone number</label>
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-field">
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder=" "
+                            required
+                        ></textarea>
+
+                        <label for="message">Message</label>
+
+                        <span class="form-error">
+                            Please enter a message.
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTON -->
+
+            <div class="button-container">
+                <button
+                    class="button"
+                    type="submit"
+                >
+                    Send message
+                </button>
+            </div>
+
+        </form>
+
+        <div class="contact-success" id="contactSuccess" aria-live="polite">
+
+            <img src="Icon.svg" alt="icon success" class="success-icon">
+        
+            <h2>Message sent!</h2>
+        
+            <p>
+                Thanks for reaching out.<br>
+                I'll get back to you soon.
+            </p>
+        
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

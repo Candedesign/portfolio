@@ -1,0 +1,371 @@
+/* =====================================
+   CASE STUDY
+===================================== */
+
+body {
+    margin: 0;
+}
+
+.case-study {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+    min-height: 100vh;
+
+    padding-top: 64px;
+    position: relative;
+
+    display: grid;
+
+
+}
+
+
+
+.case-study::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 100vw;
+    height: 850px;
+
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to bottom,
+        #DDD8FF 0%,
+        #FFFFFF 20%
+    );
+    z-index: -1;
+}
+
+
+
+
+/* -------------------------------------
+   SIDEBAR
+------------------------------------- */
+
+.case-sidebar {
+    position: sticky;
+    border-right: 1px solid #E8E8E8;
+    top: 104px;
+
+    height: fit-content;
+    align-self: start;
+
+    padding: 48px 32px;
+
+}
+
+
+.case-back {
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin-bottom: 56px;
+
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-md);
+    font-weight: 600;
+
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.case-back-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.case-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+
+
+.case-back-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.case-back:hover {
+    color: var(--color-text-tertiary);
+}
+.case-nav-link {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-md);
+
+    color: var(--color-text-tertiary);
+    text-decoration: none;
+
+    transition: color 200ms ease;
+}
+
+
+.case-nav-link:hover,
+.case-nav-link.is-active {
+    color: var(--color-text-secondary);
+}
+
+
+/* -------------------------------------
+   CONTENT
+------------------------------------- */
+
+.case-content {
+    width: 100%;
+    max-width: 900px;
+
+    padding: 64px 72px 120px;
+}
+
+
+/* -------------------------------------
+   SECTIONS
+------------------------------------- */
+
+.case-section {
+    margin-bottom: 120px;
+}
+
+
+.case-eyebrow {
+    margin: 0 0 16px;
+
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-sm);
+
+    color: var(--color-text-tertiary);
+}
+
+.page-case-title {
+    margin: 0 0 24px;
+
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-5xl);
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    color: var(--color-text-primary);
+}
+
+.case-title {
+    margin: 0 0 24px;
+
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-4xl);
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    color: var(--color-text-primary);
+}
+
+
+.case-description {
+    max-width: 720px;
+
+    margin-bottom: 48px;
+    margin-top: 32px;
+
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-md);
+
+    line-height: 1.7;
+
+    color: var(--color-text-tertiary);
+}
+
+.case-description-2 {
+    max-width: 720px;
+
+    margin: 40px 16px 40px;
+
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-md);
+}
+
+/* -------------------------------------
+   IMAGES
+------------------------------------- */
+
+.case-image {
+    width: 100%;
+
+    margin-top: 40px;
+
+    background: #F2F2F2;
+}
+
+
+.case-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* -------------------------------------
+   PROJECT INFO
+------------------------------------- */
+
+.case-project-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+
+    margin-top: var(--space-2xl);
+}
+
+.case-info-title {
+    margin: 0 0 var(--space-sm);
+
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+
+    color: var(--color-text-tertiary);
+}
+
+.case-info-text {
+    margin: 0;
+
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-md);
+    line-height: 1.5;
+
+    color:#919191;
+}
+
+/* -------------------------------------
+   PROVIDA APP SCREENS
+------------------------------------- */
+
+.app-screens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+
+    margin-top: var(--space-2xl);
+}
+
+.app-screens img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    /* PROJECT LAYOUT */
+
+    .case-study {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        width: 100%;
+        max-width: none;
+
+        padding-top: var(--space-xl);
+    }
+
+
+    /* SIDEBAR */
+
+    .case-sidebar {
+        display: none;
+    }
+
+
+    /* CONTENT */
+
+    .case-content {
+        width: 100%;
+        max-width: none;
+
+        padding: 24px 16px 80px;
+    }
+
+
+    .case-project-info {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .app-screens {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .app-screens img{
+    height: 350px;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+    }
+
+    .page-case-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .case-title {
+        font-size: var(--font-size-3xl);
+    }
+
+        .menu-overlay {
+            position: fixed;
+            inset: 0;
+    
+            background: rgba(0, 0, 0, 0.35);
+    
+            opacity: 0;
+            visibility: hidden;
+    
+            z-index: 1000;
+        }
+    
+        .menu-overlay.is-visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .main-nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+    
+            width: 80vw;
+            height: 100dvh;
+    
+            z-index: 1001;
+        }
+    
+        .menu-close {
+            position: absolute;
+            z-index: 1002;
+        }
+    }
+    
+
